@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Yerel veritabanı ve yüklemeler
+backend/*.db
+backend/data/
+
+# Gerçek kişi verisi içeren dosyalar (KVKK) — repoya girmez
+backend/tests/fixtures/private/
+*.xlsx
+!backend/tests/fixtures/sample_*.xlsx
+
+# Ortam
+.env
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
