@@ -1,0 +1,93 @@
+body {
+  background: var(--mantine-color-body);
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Tahsilat çizelgesi */
+.grid-wrap {
+  overflow: auto;
+  max-height: calc(100vh - 220px);
+  border: 1px solid var(--mantine-color-default-border);
+  border-radius: var(--mantine-radius-md);
+}
+
+.grid-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+  min-width: 100%;
+}
+
+.grid-table th,
+.grid-table td {
+  padding: 4px 8px;
+  border-bottom: 1px solid var(--mantine-color-default-border);
+  border-right: 1px solid var(--mantine-color-default-border);
+  background: var(--mantine-color-body);
+}
+
+.grid-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--mantine-color-default-hover);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.grid-table .sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 220px;
+  max-width: 260px;
+}
+
+.grid-table thead .sticky-col {
+  z-index: 3;
+}
+
+.grid-table .block-row td {
+  background: var(--mantine-color-default-hover);
+  font-weight: 700;
+}
+
+.cell-paid {
+  background: light-dark(var(--mantine-color-teal-0), rgba(18, 184, 134, 0.18)) !important;
+}
+
+.cell-partial {
+  background: light-dark(var(--mantine-color-yellow-0), rgba(250, 176, 5, 0.18)) !important;
+}
+
+.cell-unpaid {
+  background: light-dark(var(--mantine-color-red-0), rgba(250, 82, 82, 0.16)) !important;
+}
+
+.cell-click {
+  cursor: pointer;
+}
+
+.cell-click:hover {
+  outline: 2px solid var(--mantine-color-teal-5);
+  outline-offset: -2px;
+}
+
+mark.hl-strong {
+  background: light-dark(var(--mantine-color-teal-1), rgba(18, 184, 134, 0.35));
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+mark.hl-weak {
+  background: light-dark(var(--mantine-color-yellow-1), rgba(250, 176, 5, 0.3));
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+}
